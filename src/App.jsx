@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Mail, MapPin } from 'lucide-react';
 
 const products=[
  {name:'مرتبة Everest Balance',type:'دعم متوازن',price:'8,950',img:'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85',tag:'الأكثر مبيعًا'},
