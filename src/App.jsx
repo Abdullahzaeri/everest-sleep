@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Mail, MapPin } from 'lucide-react';
 import heroImage from './content.png';
-
+import logoImage from '../content.jpg';
 const products=[
  {name:'مرتبة Everest Balance',type:'دعم متوازن',price:'8,950',img:'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85',tag:'الأكثر مبيعًا'},
  {name:'مرتبة Everest Cloud',type:'نعومة استثنائية',price:'11,750',img:'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=85',tag:'راحة فندقية'},
@@ -18,7 +18,7 @@ function App(){
  const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);
  return <div>
   <div className="announcement"><span>شحن مجاني داخل القاهرة والجيزة للطلبات المختارة</span><span>استشارات نوم مجانية: <bdi>0100 000 0000</bdi></span></div>
-  <header className="header"><a href="#" className="wordmark" aria-label="Everest Sleep"><strong>EVEREST</strong><span>SLEEP</span></a>
+  <a href="#" className="wordmark" aria-label="Everest Sleep"><img src={logoImage} alt="Everest Sleep" /></a>
    <nav className={menu?'nav open':'nav'}><a href="#mattresses">المراتب</a><a href="#products">منتجات النوم</a><a href="#why">لماذا إيفرست؟</a><a href="#reviews">تجارب عملائنا</a><a href="#contact">تواصل معنا</a></nav>
    <div className="header-actions"><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button><a className="header-cta" href="#products">تسوّق الآن</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
   </header>
