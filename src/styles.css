@@ -1101,4 +1101,36 @@ button{
   .hero-trust{
     margin-top:35px;
   }
+} 
+
+/* Hero Desktop Final Fix */
+@media (min-width:981px){
+
+  .hero{
+    display:grid !important;
+    grid-template-columns:1fr 1.15fr !important;
+    align-items:stretch !important;
+    min-height:620px !important;
+  }
+
+  .hero-copy{
+    height:620px !important;
+    padding-top:55px !important;
+    padding-bottom:45px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+  }
+
+  .hero-visual{
+    height:620px !important;
+    min-height:620px !important;
+    align-self:stretch !important;
+    background-size:cover !important;
+    background-position:center !important;
+  }
+
+  .hero-trust{
+    margin-top:35px !important;
+  }
 }
