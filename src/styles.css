@@ -1082,7 +1082,7 @@ button{
   }
 }
 /* Hero Desktop Clean Fix */
-@media (min-width:981px){
+@media (min-width:769px){
   .hero{
     display:grid;
     grid-template-columns: 50% 50%;
