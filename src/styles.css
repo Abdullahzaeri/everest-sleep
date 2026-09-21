@@ -853,7 +853,7 @@ button{
 
 /* Responsive */
 
-@media(max-width:980px){
+@media(max-width:768px){
 
   .announcement span:last-child{
     display:none;
