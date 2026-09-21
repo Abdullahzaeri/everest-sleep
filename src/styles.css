@@ -1081,3 +1081,24 @@ button{
     justify-content:center;
   }
 }
+/* Final Hero Balance */
+@media (min-width:981px){
+  .hero{
+    grid-template-columns: 1fr 1.15fr;
+    min-height: 560px;
+  }
+
+  .hero-copy{
+    padding-top:45px;
+    padding-bottom:45px;
+  }
+
+  .hero-visual{
+    min-height:560px;
+    height:560px;
+  }
+
+  .hero-trust{
+    margin-top:35px;
+  }
+}
