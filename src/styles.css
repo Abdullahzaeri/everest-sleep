@@ -78,7 +78,11 @@ button{
   color:var(--green);
   min-width:145px;
 }
-
+.wordmark img{
+  width:145px;
+  height:auto;
+  display:block;
+}
 .wordmark strong{
   font-size:27px;
   letter-spacing:6px;
