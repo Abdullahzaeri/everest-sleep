@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Mail, MapPin } from 'lucide-react';
 import heroImage from './content.png';
-import logoImage from '../content.jpg';
+import logoImage from '../content (1).png';
 const products=[
  {name:'مرتبة Everest Balance',type:'دعم متوازن',price:'8,950',img:'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85',tag:'الأكثر مبيعًا'},
  {name:'مرتبة Everest Cloud',type:'نعومة استثنائية',price:'11,750',img:'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=85',tag:'راحة فندقية'},
