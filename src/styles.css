@@ -1085,9 +1085,10 @@ button{
 @media (min-width:769px){
   .hero{
     display:grid;
-    grid-template-columns:55% 45%;
+    grid-template-columns:50% 50%;
     min-height:620px;
     align-items:stretch;
+    direction:ltr;
   }
 
   .hero-copy{
@@ -1096,13 +1097,16 @@ button{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    direction:rtl;
+    grid-column:1;
   }
 
   .hero-visual{
     min-height:620px;
-    height:100%;
+    height:620px;
     background-size:cover;
     background-position:center;
+    grid-column:2;
   }
 
   .hero-trust{
