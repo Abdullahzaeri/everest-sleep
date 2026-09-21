@@ -1086,12 +1086,12 @@ button{
   .hero{
     display:grid;
     grid-template-columns: 50% 50%;
-    min-height:560px;
+    min-height:620px;
     align-items:stretch;
   }
 
   .hero-copy{
-    min-height:560px;
+    min-height:620px;
     padding-top:55px;
     padding-bottom:55px;
     display:flex;
@@ -1100,8 +1100,8 @@ button{
   }
 
   .hero-visual{
-    min-height:560px;
-    height:560px;
+    min-height:620px;
+    height:620px;
     background-size:cover;
     background-position:center;
   }
