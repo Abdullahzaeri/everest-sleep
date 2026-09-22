@@ -27,7 +27,14 @@ export const content = {
       imageLabel: 'استيقظ كل يوم',
       imageLabelStrong: 'بكامل طاقتك',
       ratingLabel: 'من تقييمات عملائنا'
-    }
+    },
+    benefits: [
+      { title: 'توصيل لكل مصر', subtitle: 'بسرعة وأمان' },
+      { title: 'ضمان حتى 10 سنوات', subtitle: 'راحة بال حقيقية' },
+      { title: 'تجربة نوم أفضل', subtitle: 'جودة تشعر بها' },
+      { title: 'خبراء لمساعدتك', subtitle: 'قبل وبعد الشراء' }
+    ]
+
   },
 
   en: {
@@ -58,6 +65,13 @@ export const content = {
       imageLabel: 'Wake up every day',
       imageLabelStrong: 'fully energized',
       ratingLabel: 'from customer reviews'
-    }
+    },
+    benefits: [
+      { title: 'Delivery across Egypt', subtitle: 'Fast and secure' },
+      { title: 'Up to 10-year warranty', subtitle: 'Long-term peace of mind' },
+      { title: 'A better sleep experience', subtitle: 'Quality you can feel' },
+      { title: 'Sleep experts to help', subtitle: 'Before and after purchase' }
+    ]
+
   }
 };
