@@ -84,6 +84,23 @@ export const content = {
         { text: 'خدمة محترمة جدًا والتوصيل وصل في معاده. فريق العمل ساعدني أختار درجة الصلابة المناسبة.', name: 'أحمد سامي', city: 'الجيزة' },
         { text: 'جودة الخامات واضحة والمرتبة محافظة على شكلها. تجربة ممتازة وأنصح بها أي حد بيدور على راحة حقيقية.', name: 'مريم خالد', city: 'الإسكندرية' }
       ]
+    },
+    faq: {
+      kicker: 'كل ما تحتاج معرفته',
+      title: 'أسئلة شائعة',
+      items: [
+        { question: 'كيف أختار المرتبة المناسبة لي؟', answer: 'يعتمد الاختيار على وضعية نومك ودرجة الصلابة المفضلة ووزن الجسم. تواصل مع مستشاري النوم لدينا وسنساعدك في تحديد الاختيار الأنسب.' },
+        { question: 'هل يوجد ضمان على مراتب Everest Sleep؟', answer: 'نعم، تأتي مراتبنا بضمان ممتد يصل إلى 10 سنوات ضد عيوب الصناعة، وفقًا لشروط الضمان الخاصة بكل موديل.' },
+        { question: 'هل التوصيل متاح لكل محافظات مصر؟', answer: 'نوفر التوصيل إلى القاهرة والجيزة والإسكندرية ومعظم المحافظات، ويتم تحديد الموعد والتكلفة حسب عنوان الاستلام.' },
+        { question: 'ما هي طرق الدفع المتاحة؟', answer: 'يمكنك الدفع نقدًا عند الاستلام، وستتوفر قريبًا خيارات الدفع الإلكتروني والتقسيط الآمن.' }
+      ]
+    },
+    contactCard: {
+      eyebrow: 'لسه محتار؟',
+      title: 'دعنا نساعدك تنام أفضل.',
+      description: 'تحدث مع أحد خبراء النوم لدينا وسيقترح عليك المرتبة الأنسب لاحتياجاتك.',
+      callNow: 'كلمنا الآن',
+      hours: 'متاحون يوميًا من 10 صباحًا حتى 10 مساءً'
     }
 
   },
@@ -173,6 +190,23 @@ export const content = {
         { text: 'Excellent service and delivery arrived on time. The team helped me choose the right firmness level.', name: 'Ahmed Samy', city: 'Giza' },
         { text: 'The material quality is clear and the mattress keeps its shape. A very good experience for anyone looking for real comfort.', name: 'Mariam Khaled', city: 'Alexandria' }
       ]
+    },
+    faq: {
+      kicker: 'Everything you need to know',
+      title: 'Frequently asked questions',
+      items: [
+        { question: 'How do I choose the right mattress?', answer: 'The right choice depends on your sleeping position, preferred firmness and body weight. Contact our sleep consultants and we will help you find the best match.' },
+        { question: 'Do Everest Sleep mattresses include a warranty?', answer: 'Yes. Our mattresses include extended warranties of up to 10 years against manufacturing defects, subject to each model’s warranty terms.' },
+        { question: 'Is delivery available across Egypt?', answer: 'We deliver to Cairo, Giza, Alexandria and most governorates. Delivery timing and cost depend on the destination.' },
+        { question: 'What payment methods are available?', answer: 'Cash on delivery is available, with secure online payment and installment options planned.' }
+      ]
+    },
+    contactCard: {
+      eyebrow: 'Still deciding?',
+      title: 'Let us help you sleep better.',
+      description: 'Talk to one of our sleep experts and we will recommend the mattress that best fits your needs.',
+      callNow: 'Call us now',
+      hours: 'Available daily from 10 AM to 10 PM'
     }
 
   }
