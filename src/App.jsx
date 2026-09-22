@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Mail, MapPin } from 'lucide-react';
 import heroImage from './content.png';
 import logoImage from '../content (1).png';
+import { content } from './content.js';
+
 const products=[
  {name:'مرتبة Everest Balance',type:'دعم متوازن',price:'8,950',img:'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85',tag:'الأكثر مبيعًا'},
  {name:'مرتبة Everest Cloud',type:'نعومة استثنائية',price:'11,750',img:'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=85',tag:'راحة فندقية'},
@@ -16,9 +18,10 @@ const faqs=[
 
 function App(){
  const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);const [lang,setLang]=useState('ar');
+ const t = content[lang];
  return <div>
 <div className="announcement">
-  <span>{lang==='ar'?'شحن مجاني داخل القاهرة والجيزة للطلبات المختارة':'Free shipping in Cairo & Giza on selected orders'}</span>
+  <span>{t.announcement.shipping}</span>
   <span>{lang==='ar'?<>استشارات نوم مجانية: <bdi>0100 000 0000</bdi></>:<>Free sleep consultation: <bdi>0100 000 0000</bdi></>}</span>
 </div>
  <header className="header"> <a href="#" className="wordmark" aria-label="Everest Sleep"><img src={logoImage} alt="Everest Sleep" /></a>
