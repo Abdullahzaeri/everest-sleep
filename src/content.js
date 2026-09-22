@@ -73,6 +73,17 @@ export const content = {
         { label: 'وسائد النوم', title: 'راحة تحتضن كل أحلامك' },
         { label: 'المفروشات', title: 'نعومة تشعر بها من أول لمسة' }
       ]
+    },
+    reviews: {
+      kicker: 'حكايات من بيوت مصرية',
+      title: 'لأن راحتكم هي أفضل شهادة',
+      verifiedCustomer: 'عميل موثّق',
+      verifiedPurchase: 'شراء موثّق',
+      items: [
+        { text: 'نومي اتغيّر فعلًا من أول أسبوع. المرتبة مريحة جدًا وفي نفس الوقت بتدعم الظهر كويس.', name: 'سارة مصطفى', city: 'القاهرة' },
+        { text: 'خدمة محترمة جدًا والتوصيل وصل في معاده. فريق العمل ساعدني أختار درجة الصلابة المناسبة.', name: 'أحمد سامي', city: 'الجيزة' },
+        { text: 'جودة الخامات واضحة والمرتبة محافظة على شكلها. تجربة ممتازة وأنصح بها أي حد بيدور على راحة حقيقية.', name: 'مريم خالد', city: 'الإسكندرية' }
+      ]
     }
 
   },
@@ -150,6 +161,17 @@ export const content = {
       items: [
         { label: 'Sleep pillows', title: 'Comfort that embraces every dream' },
         { label: 'Bedding', title: 'Softness you feel from the first touch' }
+      ]
+    },
+    reviews: {
+      kicker: 'Stories from Egyptian homes',
+      title: 'Your comfort is our best testimonial',
+      verifiedCustomer: 'Verified customer',
+      verifiedPurchase: 'Verified purchase',
+      items: [
+        { text: 'My sleep genuinely improved from the first week. The mattress is very comfortable while still supporting my back well.', name: 'Sara Mostafa', city: 'Cairo' },
+        { text: 'Excellent service and delivery arrived on time. The team helped me choose the right firmness level.', name: 'Ahmed Samy', city: 'Giza' },
+        { text: 'The material quality is clear and the mattress keeps its shape. A very good experience for anyone looking for real comfort.', name: 'Mariam Khaled', city: 'Alexandria' }
       ]
     }
 
