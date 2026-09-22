@@ -37,7 +37,7 @@ function App(){
 </a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
   </header>
   <main>
-   <section className="hero"><div className="hero-glow"></div><div className="hero-copy"><div className="eyebrow"><Sparkles size={15}/>{lang==='ar'?'راحة مصممة خصيصاً لك':'Comfort designed for you'}<h1>{lang==='ar'?<>كل يوم أفضل<br/>يبدأ من <em>نوم أعمق.</em></>:<>Every better day<br/>starts with <em>deeper sleep.</em></>}</h1><p>
+   <section className="hero"><div className="hero-glow"></div><div className="hero-copy"><div className="eyebrow"><Sparkles size={15}/>{t.hero.eyebrow}<h1>{t.hero.title1}<br/><em>{t.hero.title2}</em></h1><p>
   {t.hero.description}
 </p><div className="hero-buttons"><a className="primary" href="#mattresses">{t.hero.primaryButton} <ArrowLeft size={18}/></a><a className="text-link" href="#why">{t.hero.secondaryButton}<ArrowLeft size={17}/></a></div><div className="hero-trust"><div><b>+15</b><span>{t.hero.experience}</span></div><div><b>10</b><span>{t.hero.warranty}</span></div><div><b>+20K</b><span>{t.hero.customers}</span></div></div></div>
  </div><div className="hero-visual" style={{backgroundImage:`url(${heroImage})`}}><div className="hero-label"><MoonStar/><span>استيقظ كل يوم<br/><b>بكامل طاقتك</b></span></div><div className="rating-card"><span>★★★★★</span><b>4.9</b><small>من تقييمات عملائنا</small></div></div>
