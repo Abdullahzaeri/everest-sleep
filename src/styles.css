@@ -1089,7 +1089,7 @@ button{
 @media (min-width:769px){
   .hero{
     display:grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns:55% 45%;
     min-height:620px;
     align-items:stretch;
     direction:ltr;
