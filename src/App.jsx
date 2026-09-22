@@ -15,12 +15,15 @@ const faqs=[
 ];
 
 function App(){
- const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);
+ const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);const [lang,setLang]=useState('ar');
  return <div>
-  <div className="announcement"><span>شحن مجاني داخل القاهرة والجيزة للطلبات المختارة</span><span>استشارات نوم مجانية: <bdi>0100 000 0000</bdi></span></div>
+<div className="announcement">
+  <span>{lang==='ar'?'شحن مجاني داخل القاهرة والجيزة للطلبات المختارة':'Free shipping in Cairo & Giza on selected orders'}</span>
+  <span>{lang==='ar'?<>استشارات نوم مجانية: <bdi>0100 000 0000</bdi></>:<>Free sleep consultation: <bdi>0100 000 0000</bdi></>}</span>
+</div>
  <header className="header"> <a href="#" className="wordmark" aria-label="Everest Sleep"><img src={logoImage} alt="Everest Sleep" /></a>
    <nav className={menu?'nav open':'nav'}><a href="#mattresses">المراتب</a><a href="#products">منتجات النوم</a><a href="#why">لماذا إيفرست؟</a><a href="#reviews">تجارب عملائنا</a><a href="#contact">تواصل معنا</a></nav>
-   <div className="header-actions"><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button><a className="header-cta" href="#products">تسوّق الآن</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
+   <div className="header-actions"><button className="lang-btn" onClick={()=>setLang(lang==='ar'?'en':'ar')}>{lang==='ar'?'EN':'عربي'}</button><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button><a className="header-cta" href="#products">تسوّق الآن</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
   </header>
   <main>
    <section className="hero"><div className="hero-glow"></div><div className="hero-copy"><div className="eyebrow"><Sparkles size={15}/> راحة مصممة خصيصًا لك</div><h1>كل يوم أفضل<br/>يبدأ من <em>نوم أعمق.</em></h1><p>مراتب بتكنولوجيا متطورة وخامات مختارة بعناية، لتمنح جسمك الدعم الذي يحتاجه وراحتك التي تستحقها.</p><div className="hero-buttons"><a className="primary" href="#mattresses">اكتشف المراتب <ArrowLeft size={18}/></a><a className="text-link" href="#why">اعرف الأنسب لك <ArrowLeft size={17}/></a></div><div className="hero-trust"><div><b>+15</b><span>عامًا من الخبرة</span></div><div><b>10</b><span>سنوات ضمان</span></div><div><b>+20K</b><span>عميل سعيد</span></div></div></div>
