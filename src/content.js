@@ -63,6 +63,16 @@ export const content = {
         { title: 'مصنوعة لتدوم', subtitle: 'خامات عالية الجودة تتحمل الاستخدام اليومي لسنوات.' }
       ],
       link: 'قصتنا ومعايير الجودة'
+    },
+    sleepProducts: {
+      kicker: 'راحة متكاملة',
+      title: 'أكمل تجربة نومك',
+      viewAll: 'عرض كل المنتجات',
+      discover: 'اكتشف المجموعة',
+      items: [
+        { label: 'وسائد النوم', title: 'راحة تحتضن كل أحلامك' },
+        { label: 'المفروشات', title: 'نعومة تشعر بها من أول لمسة' }
+      ]
     }
 
   },
@@ -131,6 +141,16 @@ export const content = {
         { title: 'Built to last', subtitle: 'High-quality materials made for years of daily use.' }
       ],
       link: 'Our story and quality standards'
+    },
+    sleepProducts: {
+      kicker: 'Complete comfort',
+      title: 'Complete your sleep experience',
+      viewAll: 'View all products',
+      discover: 'Discover the collection',
+      items: [
+        { label: 'Sleep pillows', title: 'Comfort that embraces every dream' },
+        { label: 'Bedding', title: 'Softness you feel from the first touch' }
+      ]
     }
 
   }
