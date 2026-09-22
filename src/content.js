@@ -49,6 +49,20 @@ export const content = {
         { name: 'مرتبة Everest Cloud', type: 'نعومة استثنائية', tag: 'راحة فندقية' },
         { name: 'مرتبة Everest Active', type: 'دعم متقدم للظهر', tag: 'تقنية متطورة' }
       ]
+    },
+    why: {
+      badgeTitle: 'خامات موثوقة',
+      badgeSubtitle: 'مختبرة وفق معايير الجودة',
+      kicker: 'الفرق في كل تفصيلة',
+      title1: 'ليست مجرد مرتبة.',
+      title2: 'إنها استثمار في يومك.',
+      description: 'في Everest Sleep نؤمن أن النوم الجيد يغيّر كل شيء. لذلك ندمج خبرتنا مع أحدث تقنيات الراحة لنقدم لك نومًا صحيًا يستمر لسنوات.',
+      points: [
+        { title: 'دعم ذكي للجسم', subtitle: 'توزيع متوازن للضغط ومحاذاة صحية للعمود الفقري.' },
+        { title: 'تهوية تدوم طوال الليل', subtitle: 'طبقات تسمح بتدفق الهواء لحرارة نوم مثالية.' },
+        { title: 'مصنوعة لتدوم', subtitle: 'خامات عالية الجودة تتحمل الاستخدام اليومي لسنوات.' }
+      ],
+      link: 'قصتنا ومعايير الجودة'
     }
 
   },
@@ -103,6 +117,20 @@ export const content = {
         { name: 'Everest Cloud Mattress', type: 'Exceptional softness', tag: 'Hotel comfort' },
         { name: 'Everest Active Mattress', type: 'Advanced back support', tag: 'Advanced technology' }
       ]
+    },
+    why: {
+      badgeTitle: 'Trusted materials',
+      badgeSubtitle: 'Tested to quality standards',
+      kicker: 'The difference is in every detail',
+      title1: 'More than a mattress.',
+      title2: 'An investment in your day.',
+      description: 'At Everest Sleep, we believe better sleep changes everything. We combine our experience with modern comfort technology to deliver healthy sleep that lasts for years.',
+      points: [
+        { title: 'Smart body support', subtitle: 'Balanced pressure distribution and healthy spinal alignment.' },
+        { title: 'All-night breathability', subtitle: 'Layers designed for airflow and an ideal sleep temperature.' },
+        { title: 'Built to last', subtitle: 'High-quality materials made for years of daily use.' }
+      ],
+      link: 'Our story and quality standards'
     }
 
   }
