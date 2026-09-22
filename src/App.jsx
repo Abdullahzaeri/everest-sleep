@@ -9,13 +9,6 @@ const productData=[
  {price:'11,750',img:'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=85'},
  {price:'13,490',img:'https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=900&q=85'}
 ];
-const faqs=[
- ['كيف أختار المرتبة المناسبة لي؟','يعتمد الاختيار على وضعية نومك ودرجة الصلابة المفضلة ووزن الجسم. تواصل مع مستشاري النوم لدينا وسنساعدك في تحديد الاختيار الأنسب.'],
- ['هل يوجد ضمان على مراتب Everest Sleep؟','نعم، تأتي مراتبنا بضمان ممتد يصل إلى 10 سنوات ضد عيوب الصناعة، وفقًا لشروط الضمان الخاصة بكل موديل.'],
- ['هل التوصيل متاح لكل محافظات مصر؟','نوفر التوصيل إلى القاهرة والجيزة والإسكندرية ومعظم المحافظات، ويتم تحديد الموعد والتكلفة حسب عنوان الاستلام.'],
- ['ما هي طرق الدفع المتاحة؟','يمكنك الدفع نقدًا عند الاستلام، وستتوفر قريبًا خيارات الدفع الإلكتروني والتقسيط الآمن.']
-];
-
 function App(){
  const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);const [lang,setLang]=useState('ar');
  const t = content[lang];
@@ -46,7 +39,7 @@ function App(){
    <section className="why" id="why"><div className="why-photo"><div className="floating"><BadgeCheck/><span><b>{t.why.badgeTitle}</b><small>{t.why.badgeSubtitle}</small></span></div></div><div className="why-copy"><span className="kicker light">{t.why.kicker}</span><h2>{t.why.title1}<br/>{t.why.title2}</h2><p>{t.why.description}</p><div className="why-list">{t.why.points.map((point,i)=><div key={point.title}><i>{String(i+1).padStart(2,'0')}</i><span><b>{point.title}</b><small>{point.subtitle}</small></span></div>)}</div><a className="gold-link" href="#contact">{t.why.link} <ArrowLeft size={18}/></a></div></section>
    <section className="sleep-products section" id="products"><div className="section-head"><div><span className="kicker">{t.sleepProducts.kicker}</span><h2>{t.sleepProducts.title}</h2></div><a className="text-link" href="#contact">{t.sleepProducts.viewAll} <ArrowLeft size={17}/></a></div><div className="accessories">{t.sleepProducts.items.map((item,i)=><article className={`accessory ${i===0?'pillows':'linens'}`} key={item.label}><div><span>{item.label}</span><h3>{item.title}</h3><a href="#contact">{t.sleepProducts.discover} <ArrowLeft size={16}/></a></div></article>)}</div></section>
    <section className="reviews section" id="reviews"><span className="kicker">{t.reviews.kicker}</span><h2>{t.reviews.title}</h2><div className="review-grid">{t.reviews.items.map((r,i)=><article key={r.name}><Quote/><div className="stars">★★★★★</div><p>“{r.text}”</p><div className="reviewer"><i>{r.name[0]}</i><span><b>{r.name}</b><small>{r.city} · {t.reviews.verifiedCustomer}</small></span></div>{i===1&&<b className="verified"><BadgeCheck/> {t.reviews.verifiedPurchase}</b>}</article>)}</div></section>
-   <section className="faq-contact section" id="contact"><div className="faq"><span className="kicker">كل ما تحتاج معرفته</span><h2>أسئلة شائعة</h2><div className="faq-list">{faqs.map((f,i)=><div className={open===i?'faq-item active':'faq-item'} key={f[0]}><button onClick={()=>setOpen(open===i?-1:i)}><span>{f[0]}</span><ChevronDown/></button><p>{f[1]}</p></div>)}</div></div><div className="contact-card"><MoonStar/><span>لسه محتار؟</span><h2>دعنا نساعدك تنام أفضل.</h2><p>تحدث مع أحد خبراء النوم لدينا وسيقترح عليك المرتبة الأنسب لاحتياجاتك.</p><a href="tel:+201000000000"><Phone size={18}/> كلمنا الآن: <bdi>0100 000 0000</bdi></a><small>متاحون يوميًا من 10 صباحًا حتى 10 مساءً</small></div></section>
+   <section className="faq-contact section" id="contact"><div className="faq"><span className="kicker">{t.faq.kicker}</span><h2>{t.faq.title}</h2><div className="faq-list">{t.faq.items.map((f,i)=><div className={open===i?'faq-item active':'faq-item'} key={f.question}><button onClick={()=>setOpen(open===i?-1:i)}><span>{f.question}</span><ChevronDown/></button><p>{f.answer}</p></div>)}</div></div><div className="contact-card"><MoonStar/><span>{t.contactCard.eyebrow}</span><h2>{t.contactCard.title}</h2><p>{t.contactCard.description}</p><a href="tel:+201000000000"><Phone size={18}/> {t.contactCard.callNow}: <bdi>0100 000 0000</bdi></a><small>{t.contactCard.hours}</small></div></section>
    <section className="newsletter"><div><span className="kicker light">ابقَ على تواصل</span><h2>نصائح لنوم أعمق وعروض تستحقها.</h2></div><form onSubmit={e=>e.preventDefault()}><input type="email" placeholder="اكتب بريدك الإلكتروني" aria-label="البريد الإلكتروني"/><button>اشترك الآن <ArrowLeft size={17}/></button></form></section>
 
    </main>
