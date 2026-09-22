@@ -23,7 +23,10 @@ export const content = {
       secondaryButton: 'اعرف الأنسب لك',
       experience: 'عاماً من الخبرة',
       warranty: 'سنوات ضمان',
-      customers: 'عميل سعيد'
+      customers: 'عميل سعيد',
+      imageLabel: 'استيقظ كل يوم',
+      imageLabelStrong: 'بكامل طاقتك',
+      ratingLabel: 'من تقييمات عملائنا'
     }
   },
 
@@ -51,7 +54,10 @@ export const content = {
       secondaryButton: 'Find Your Match',
       experience: 'Years of Experience',
       warranty: 'Years Warranty',
-      customers: 'Happy Customers'
+      customers: 'Happy Customers',
+      imageLabel: 'Wake up every day',
+      imageLabelStrong: 'fully energized',
+      ratingLabel: 'from customer reviews'
     }
   }
 };
