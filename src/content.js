@@ -101,6 +101,13 @@ export const content = {
       description: 'تحدث مع أحد خبراء النوم لدينا وسيقترح عليك المرتبة الأنسب لاحتياجاتك.',
       callNow: 'كلمنا الآن',
       hours: 'متاحون يوميًا من 10 صباحًا حتى 10 مساءً'
+    },
+    newsletter: {
+      kicker: 'ابقَ على تواصل',
+      title: 'نصائح لنوم أعمق وعروض تستحقها.',
+      placeholder: 'اكتب بريدك الإلكتروني',
+      emailLabel: 'البريد الإلكتروني',
+      button: 'اشترك الآن'
     }
 
   },
@@ -207,6 +214,13 @@ export const content = {
       description: 'Talk to one of our sleep experts and we will recommend the mattress that best fits your needs.',
       callNow: 'Call us now',
       hours: 'Available daily from 10 AM to 10 PM'
+    },
+    newsletter: {
+      kicker: 'Stay connected',
+      title: 'Tips for deeper sleep and offers worth receiving.',
+      placeholder: 'Enter your email address',
+      emailLabel: 'Email address',
+      button: 'Subscribe now'
     }
 
   }
