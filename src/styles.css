@@ -190,7 +190,7 @@ button{
 }
 
 .hero h1{
-  font-size:clamp(38px,3.2vw,52px);
+  font-size:clamp(42px,4.4vw,70px);
   line-height:1.2;
   margin:0;
   color:var(--green);
@@ -1089,7 +1089,7 @@ button{
 @media (min-width:769px){
   .hero{
     display:grid;
-    grid-template-columns:55% 45%;
+    grid-template-columns:50% 50%;
     min-height:620px;
     align-items:stretch;
     direction:ltr;
