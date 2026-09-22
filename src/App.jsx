@@ -22,11 +22,22 @@ function App(){
   <span>{lang==='ar'?<>استشارات نوم مجانية: <bdi>0100 000 0000</bdi></>:<>Free sleep consultation: <bdi>0100 000 0000</bdi></>}</span>
 </div>
  <header className="header"> <a href="#" className="wordmark" aria-label="Everest Sleep"><img src={logoImage} alt="Everest Sleep" /></a>
-   <nav className={menu?'nav open':'nav'}><a href="#mattresses">المراتب</a><a href="#products">منتجات النوم</a><a href="#why">لماذا إيفرست؟</a><a href="#reviews">تجارب عملائنا</a><a href="#contact">تواصل معنا</a></nav>
-   <div className="header-actions"><button className="lang-btn" onClick={()=>setLang(lang==='ar'?'en':'ar')}>{lang==='ar'?'EN':'Ar'}</button><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button><a className="header-cta" href="#products">تسوّق الآن</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
+   <nav className={menu?'nav open':'nav'}>
+  <a href="#mattresses">{lang==='ar'?'المراتب':'Mattresses'}</a>
+  <a href="#products">{lang==='ar'?'منتجات النوم':'Sleep Products'}</a>
+  <a href="#why">{lang==='ar'?'لماذا إيفرست؟':'Why Everest?'}</a>
+  <a href="#reviews">{lang==='ar'?'تجارب عملائنا':'Reviews'}</a>
+  <a href="#contact">{lang==='ar'?'تواصل معنا':'Contact Us'}</a>
+</nav>
+   <div className="header-actions"><button className="lang-btn" onClick={()=>setLang(lang==='ar'?'en':'ar')}>{lang==='ar'?'EN':'Ar'}</button><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button> <a className="header-cta" href="#products">
+  {lang==='ar'?'تسوق الآن':'Shop Now'}
+</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="القائمة">{menu?<X/>:<Menu/>}</button></div>
   </header>
   <main>
-   <section className="hero"><div className="hero-glow"></div><div className="hero-copy"><div className="eyebrow"><Sparkles size={15}/> راحة مصممة خصيصًا لك</div><h1>كل يوم أفضل<br/>يبدأ من <em>نوم أعمق.</em></h1><p>مراتب بتكنولوجيا متطورة وخامات مختارة بعناية، لتمنح جسمك الدعم الذي يحتاجه وراحتك التي تستحقها.</p><div className="hero-buttons"><a className="primary" href="#mattresses">اكتشف المراتب <ArrowLeft size={18}/></a><a className="text-link" href="#why">اعرف الأنسب لك <ArrowLeft size={17}/></a></div><div className="hero-trust"><div><b>+15</b><span>عامًا من الخبرة</span></div><div><b>10</b><span>سنوات ضمان</span></div><div><b>+20K</b><span>عميل سعيد</span></div></div></div>
+   <section className="hero"><div className="hero-glow"></div><div className="hero-copy"><div className="eyebrow"><Sparkles size={15}/>{lang==='ar'?'راحة مصممة خصيصاً لك':'Comfort designed for you'}<h1>{lang==='ar'?<>كل يوم أفضل<br/>يبدأ من <em>نوم أعمق.</em></>:<>Every better day<br/>starts with <em>deeper sleep.</em></>}</h1><p>{lang==='ar'
+  ? 'مراتب بتكنولوجيا متطورة وخامات مختارة بعناية، لتمنح جسمك الدعم الذي يحتاجه وراحتك التي تستحقها.'
+  : 'Mattresses crafted with advanced technology and carefully selected materials to give your body the support and comfort it deserves.'
+}</p><div className="hero-buttons"><a className="primary" href="#mattresses">{lang==='ar'?'اكتشف المراتب':'Explore Mattresses'} <ArrowLeft size={18}/></a><a className="text-link" href="#why">{lang==='ar'?'اعرف الأنسب لك':'Find Your Match'} <ArrowLeft size={17}/></a></div><div className="hero-trust"><div><b>+15</b><span>عامًا من الخبرة</span></div><div><b>10</b><span>سنوات ضمان</span></div><div><b>+20K</b><span>عميل سعيد</span></div></div></div>
     <div className="hero-visual" style={{backgroundImage:`url(${heroImage})`}}><div className="hero-label"><MoonStar/><span>استيقظ كل يوم<br/><b>بكامل طاقتك</b></span></div><div className="rating-card"><span>★★★★★</span><b>4.9</b><small>من تقييمات عملائنا</small></div></div>
    </section>
    <section className="benefit-strip"><div><Truck/><span><b>توصيل لكل مصر</b><small>بسرعة وأمان</small></span></div><div><ShieldCheck/><span><b>ضمان حتى 10 سنوات</b><small>راحة بال حقيقية</small></span></div><div><MoonStar/><span><b>تجربة نوم أفضل</b><small>جودة تشعر بها</small></span></div><div><Headphones/><span><b>خبراء لمساعدتك</b><small>قبل وبعد الشراء</small></span></div></section>
