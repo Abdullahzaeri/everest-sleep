@@ -1210,3 +1210,25 @@ button{
   .faq-contact{gap:30px}
   .newsletter{padding:40px 24px}
 }
+
+
+/* Custom Everest footer */
+.footer{background:var(--deep);color:#fff;padding:58px 7% 22px}
+.footer-main{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:55px}
+.footer-logo{background:#fff;width:220px;padding:20px 24px;margin-bottom:22px}
+.footer-logo img{display:block;width:100%;height:auto}
+.footer-brand p{color:#cbd7d3;line-height:1.8;max-width:360px}
+.footer h3{color:#d6b36d;font-size:16px;margin:5px 0 20px}
+.footer-main>div>a{display:block;color:#e5ece9;margin:13px 0;font-size:14px}
+.socials{display:flex;gap:10px;margin-top:22px}
+.socials a{width:38px;height:38px;border:1px solid rgba(255,255,255,.22);display:flex!important;align-items:center;justify-content:center;margin:0!important}
+.socials svg{width:18px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:45px;padding-top:20px;display:flex;justify-content:space-between;color:#aebdb8;font-size:13px}
+@media(max-width:650px){
+ .footer{padding:44px 30px 22px}
+ .footer-main{grid-template-columns:1fr 1fr;gap:34px 24px}
+ .footer-brand{grid-column:1/-1}
+ .footer-logo{width:210px}
+ .footer-main>div:last-child{grid-column:1/-1}
+ .footer-bottom{margin-top:34px;flex-direction:column;gap:10px}
+}
