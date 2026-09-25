@@ -1117,3 +1117,59 @@ button{
     margin-top:25px;
   }
 }
+
+
+/* Mobile polish — Everest Sleep */
+@media(max-width:650px){
+  .header{
+    padding:0 18px;
+    gap:12px;
+  }
+  .wordmark img{
+    width:142px;
+  }
+  .header-actions{
+    gap:10px;
+  }
+  .menu-btn,.icon-btn{
+    width:38px;
+    height:38px;
+  }
+  .hero-copy{
+    padding:58px 28px 48px;
+  }
+  .hero h1{
+    font-size:clamp(42px,12vw,56px);
+    line-height:1.22;
+  }
+  .hero-copy>p{
+    line-height:1.95;
+    margin:24px 0 34px;
+  }
+  .hero-buttons{
+    gap:18px;
+  }
+  .primary{
+    min-height:58px;
+  }
+  .product-grid{
+    gap:22px;
+  }
+  .product{
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .product-image{
+    height:300px;
+  }
+  .product-info{
+    padding:22px 20px 24px;
+  }
+  .product-info h3{
+    font-size:21px;
+  }
+  .outline-btn{
+    width:100%;
+    justify-content:center;
+  }
+}
