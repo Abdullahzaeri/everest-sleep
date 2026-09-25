@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone } from 'lucide-react';
+import { ArrowLeft, ChevronDown, Menu, X, ShoppingBag, ShieldCheck, Truck, MoonStar, BadgeCheck, Headphones, Sparkles, Quote, Phone, Instagram, Facebook } from 'lucide-react';
 import heroImage from './content.png';
 import logoImage from '../content (1).png';
 import { content } from './content.js';
@@ -43,7 +43,7 @@ function App(){
    <section className="newsletter"><div><span className="kicker light">{t.newsletter.kicker}</span><h2>{t.newsletter.title}</h2></div><form onSubmit={e=>e.preventDefault()}><input type="email" placeholder={t.newsletter.placeholder} aria-label={t.newsletter.emailLabel}/><button>{t.newsletter.button} <ArrowLeft size={17}/></button></form></section>
 
    </main>
-  
+   <footer className="footer"><div className="footer-main"><div className="footer-brand"><div className="footer-logo"><img src={logoImage} alt="Everest Sleep" /></div><p>{lang==='ar'?'نوم أفضل. يوم أفضل. إيفرست سليب لراحة مصممة بعناية.':'Better sleep. Better days. Everest Sleep, comfort designed with care.'}</p><div className="socials"><a href="#" aria-label="Instagram"><Instagram/></a><a href="#" aria-label="Facebook"><Facebook/></a></div></div><div><h3>{lang==='ar'?'المتجر':'Shop'}</h3><a href="#mattresses">{t.nav.mattresses}</a><a href="#products">{t.nav.sleepProducts}</a></div><div><h3>{lang==='ar'?'روابط مهمة':'Useful links'}</h3><a href="#why">{t.nav.whyEverest}</a><a href="#reviews">{t.nav.reviews}</a><a href="#contact">{t.nav.contact}</a></div><div><h3>{lang==='ar'?'السياسات':'Policies'}</h3><a href="#">{lang==='ar'?'سياسة الخصوصية':'Privacy policy'}</a><a href="#">{lang==='ar'?'الشحن والاستبدال':'Shipping & returns'}</a></div></div><div className="footer-bottom"><span>© 2026 Everest Sleep</span><span>{lang==='ar'?'إيفرست سليب · مصر':'Everest Sleep · Egypt'}</span></div></footer>
  </div>
 }
 export default App;
