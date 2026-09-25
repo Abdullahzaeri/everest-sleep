@@ -12,18 +12,18 @@ const productData=[
 function App(){
  const [menu,setMenu]=useState(false); const [open,setOpen]=useState(0);const [lang,setLang]=useState('ar');
  const t = content[lang];
- return <div>
+ return <div className={`site-shell ${lang==='ar'?'is-ar':'is-en'}`} dir={lang==='ar'?'rtl':'ltr'}>
 <div className="announcement">
   <span>{t.announcement.shipping}</span>
   <span>{t.announcement.consultation}: <bdi>0100 000 0000</bdi></span>
 </div>
  <header className="header"> <a href="#" className="wordmark" aria-label="Everest Sleep"><img src={logoImage} alt="Everest Sleep" /></a>
    <nav className={menu?'nav open':'nav'}>
-  <a href="#mattresses">{t.nav.mattresses}</a>
-  <a href="#products">{t.nav.sleepProducts}</a>
-<a href="#why">{t.nav.whyEverest}</a>
-<a href="#reviews">{t.nav.reviews}</a>
-<a href="#contact">{t.nav.contact}</a>
+  <a href="#mattresses" onClick={()=>setMenu(false)}>{t.nav.mattresses}</a>
+  <a href="#products" onClick={()=>setMenu(false)}>{t.nav.sleepProducts}</a>
+<a href="#why" onClick={()=>setMenu(false)}>{t.nav.whyEverest}</a>
+<a href="#reviews" onClick={()=>setMenu(false)}>{t.nav.reviews}</a>
+<a href="#contact" onClick={()=>setMenu(false)}>{t.nav.contact}</a>
 </nav>
    <div className="header-actions"><button className="lang-btn" onClick={()=>setLang(lang==='ar'?'en':'ar')}>{lang==='ar'?'EN':'Ar'}</button><button className="icon-btn" aria-label="حقيبة التسوق"><ShoppingBag size={21}/><i>0</i></button> <a className="header-cta" href="#products">
   {t.nav.shopNow}
